@@ -18,11 +18,14 @@ The **Hospital Locator** is a web application designed to assist users in locati
 ---
 
 ## Features  
-- **User Authentication**: Sign up and log in functionality for users.  
-- **Search Nearby Hospitals**: Locate hospitals based on the user's location.  
-- **Find Doctors**: Search for doctors by specialization.  
-- **Appointment Booking**: Book, view, and cancel appointments.  
-- **Contact Us**: Submit queries to the admin for assistance.  
+| Feature               | Description                                     |  
+|-----------------------|-------------------------------------------------|  
+| User Authentication   | Sign up and log in functionality for users.     |  
+| Search Nearby Hospitals | Locate hospitals based on the user's location.|  
+| Find Doctors          | Search for doctors by specialization.           |  
+| Appointment Booking   | Book, view, and cancel appointments.            |  
+| Contact Us            | Submit queries to the admin for assistance.     |  
+  
 
 ---
 

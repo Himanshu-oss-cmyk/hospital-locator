@@ -3,12 +3,11 @@
 ## Table of Contents  
 - [Introduction](#introduction)  
 - [Features](#features)  
-- [Technologies Used](#technologies-used)  
+- [Technologies Used](#technologies-used)
+- [Installations](#installations)
 - [Screenshots](#screenshots)  
-- [Database Setup](#database-setup)  
-- [Steps to Run the Project](#steps-to-run-the-project)  
-- [Contributing](#contributing)  
-- [License](#license)  
+- [Goals](#goals)
+  
 
 
 ---

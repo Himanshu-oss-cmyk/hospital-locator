@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> CUSTOMER SUPPORT - Hospital Locator </title>
+    <link rel="stylesheet" href="Customer_Support.css">
+    <link rel="icon" href="images/logo3.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <div class="accordion">
+    <div class="image-box">
+      <img src="faqs.png" alt="">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ's</div>
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">How do I find a hospital near me?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>You can use our hospital locator tool by entering your location or allowing location access. The tool will display a list of nearby hospitals along with their contact information, services, and directions.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">How accurate is the hospital locator?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>The hospital locator uses real-time location data and up-to-date listings to provide accurate results. However, we recommend double-checking the hospital details, especially if you're in an emergency situation.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">Can I search for specific types of doctors or specialists?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Yes, you can search for doctors based on specialty, such as cardiologists, dentists, pediatricians, and more. Use the filter options on our search page to narrow down the list of hospitals that offer the specific type of care you're looking for.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">How do I know if a hospital is open 24/7?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Each hospital listing includes hours of operation. Look for the '24/7 service' tag or check the hospital's website for more details. Emergency services are typically available around the clock.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">Can I get directions to the hospital?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Yes, after selecting a hospital, you can click on the 'Get Directions' button. This will open a map with turn-by-turn navigation based on your current location.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">Do you provide reviews or ratings for hospitals?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Yes, our platform features user reviews and ratings for each hospital. You can read others' experiences and contribute your own review after receiving treatment.</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e) => {
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>

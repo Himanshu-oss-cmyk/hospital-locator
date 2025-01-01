@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Page Header -->
+    <header class="bg-blue-600 py-8 mb-12 shadow-md">
+        <h1 class="text-4xl font-bold text-center text-white">Doctors Found</h1>
+    </header>
+
+    <!-- Doctors List Container -->
+    <div id="doctorList" class="max-w-7xl mx-auto px-4 space-y-8"></div>
+
+    <script>
+        // Updated doctor data for Dr. Parlesh Bhadada
+        const doctorData = [
+            {
+                name: 'Dr. Rahul Bhansali',
+                specialty: 'Periodontist, Implantologist, Cosmetic/Aesthetic Dentist, Dental Surgeon',
+                experience: '17 Years Overall (13 years as specialist)',
+                registration: 'Medical Registration Verified',
+                bio: `Dr. Rahul Bhansali is a Periodontist, Implantologist, and Cosmetic/Aesthetic Dentist in Navi Peth Jalgaon, Jalgaon with 17 years of experience. He practices at Dentistree Multispeciality Dental & Gum Care in Jalgaon.`,
+                location: 'Jalgaon',
+                image: 'dr-rahul-bhansali.jpg',
+                profile: 'profile1.html',
+                education: [
+                    'BDS - Government Dental College & Hospital, Mumbai, 2003',
+                    'MDS - Periodontology and Oral Implantology - Government Dental College & Hospital, Nagpur, 2007'
+                ],
+                memberships: [
+                    'Indian Dental Association',
+                    'Indian Society of Oral Implantologists (ISOI)'
+                ],
+               
+            },
+            {
+                name: 'Dr. Parlesh Bhadada',
+                specialty: 'Dental Surgeon, Orthodontist',
+                experience: '18 Years Overall',
+                registration: 'Medical Registration Verified',
+                bio: `Dr. Parlesh Bhadada is a Dental Surgeon in Navi Peth Jalgaon, Jalgaon, with 18 years of experience. He practices at Bhadada's Smile Dental Care. He completed BDS from Rajiv Gandhi University of Health Sciences, Bangalore, in 2005 and a Certification in Orthodontics from Nagpur University in 2010.`,
+                location: 'Jalgaon',
+                image: 'dr-parlesh-bhadada.jpg',
+                profile: 'profile2.html',
+                education: [
+                    'BDS - Rajiv Gandhi University of Health Sciences, Bangalore, 2005',
+                    'Certified in Orthodontics - Nagpur University, 2010'
+                ],
+                memberships: [
+                    'Indian Dental Association'
+                ],
+              
+            },
+
+            {
+                name: 'Dr. Neeraj Agarwal',
+                specialty: 'Orthodontist,Cosmetic/Aesthetic Dentist,Dentofacial Orthopedist',
+                experience: '14 Years Overall',
+                registration: 'Medical Registration Verified',
+                bio: `He holds the Bachelor of Dentistry degree from Sharad Pawar Dental College, Wardha. He then went on to pursue his Masters Degree in the subject of Orthodontics from D.Y. Patil University, Pune. During his residency years he successfully completed a gamut of Orthodontic Certifications in Clinical Photography, Micro-Implants, Lingual Orthodontics etc. After his MDS, he worked as a Consultant Orthodontist at Wonder Smile Clinic, Pune. His passion for Aesthetics led him to pursue his Fellowship in Cosmetic and Aesthetic Dentistry from the prestigious ENCODE Institute in Mumbai. In order to stay updated he regularly attends various conferences and conventions.`,
+                location: 'M.J.College Jalgaon, Jalgaon',
+                image: 'dr-neeraj-agarwal.jpg',
+                profile: 'profile3.html',
+                education: [
+                    'BDS - Sharad Pawar Dental College, Wardha',
+                    'Certified in Orthodontics -  D.Y. Patil University, Pune'
+                ],
+                memberships: [
+                    'Indian Dental Association'
+                ],
+              
+            }
+        ];
+
+        // Display the doctors dynamically
+        const doctorList = document.getElementById('doctorList');
+        doctorData.forEach(doctor => {
+            const doctorCard = document.createElement('div');
+            doctorCard.classList.add('doctor-card', 'bg-white', 'shadow-xl', 'rounded-xl', 'overflow-hidden', 'transition-transform', 'hover:scale-105', 'hover:shadow-2xl', 'w-full');
+
+            doctorCard.innerHTML = `
+                <div class="flex flex-col md:flex-row items-start md:items-center p-10 space-y-6 md:space-y-0 md:space-x-10">
+                    <img class="w-32 h-32 rounded-full object-cover border-4 border-blue-500" src="${doctor.image}" alt="${doctor.name}">
+                    <div class="flex-1">
+                        <h3 class="text-3xl font-bold text-gray-800">${doctor.name}</h3>
+                        <p class="text-lg text-gray-600 mt-2">${doctor.specialty}</p>
+                        <p class="text-sm text-gray-500">Experience: ${doctor.experience}</p>
+                        <p class="text-sm text-gray-500">Registration: ${doctor.registration}</p>
+                        <p class="text-sm text-gray-500 mt-2">${doctor.bio}</p>
+                        <h4 class="text-lg font-semibold mt-4">Education:</h4>
+                        <ul class="list-disc list-inside text-gray-600">
+                            ${doctor.education.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+             
+                     
+                    </div>
+                    <a href="${doctor.profile}" class="ml-auto px-6 py-3 bg-blue-500 text-white rounded-lg shadow-sm hover:bg-blue-700 transition-colors duration-200">View Profile</a>
+                </div>
+            `;
+
+            doctorList.appendChild(doctorCard);
+        });
+    </script>
+</body>
+
+</html>

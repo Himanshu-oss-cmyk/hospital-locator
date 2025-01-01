@@ -10,14 +10,18 @@
 - [Contributing](#contributing)  
 - [License](#license)  
 
+
 ---
 
 ## Introduction  
 The **Hospital Locator** is a web application designed to assist users in locating nearby hospitals, finding doctors based on specialization, and managing appointments. The project also includes a secure user authentication system and a contact us page for inquiries.  
 
+
 ---
 
-## Features  
+
+## Features
+
 | Feature               | Description                                     |  
 |-----------------------|-------------------------------------------------|  
 | User Authentication   | Sign up and log in functionality for users.     |  
@@ -34,6 +38,11 @@ The **Hospital Locator** is a web application designed to assist users in locati
 - **Backend**: PHP  
 - **Database**: MySQL  
 - **APIs**: Google Maps API for location-based services  
+![HTML](https://img.shields.io/badge/HTML-5-orange)  
+![CSS](https://img.shields.io/badge/CSS-3-blue)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)  
+![PHP](https://img.shields.io/badge/PHP-7.4-purple)  
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)  
 
 ---
 

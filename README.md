@@ -42,7 +42,25 @@ The **Hospital Locator** is a web application designed to assist users in locati
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)  
 
 ---
-
+## Installation  
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/yourusername/hospital-locator.git
+   ```
+2. Navigate to the project directory:  
+   ```bash
+   cd hospital-locator
+   ```
+3. Install dependencies (if any):  
+   ```bash
+   npm install  # For Node.js dependencies
+   ```
+4. Start the local server:  
+   ```bash
+   php -S localhost:8000
+   ```
+5. Open your browser and visit: `http://localhost:8000`
+  ---
 ## Screenshots  
 
 ### Homepage  

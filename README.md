@@ -48,6 +48,6 @@ The **Hospital Locator** is a web application designed to assist users in locati
 ### Search for Doctors 
 ![Contact Us Page](screenshots/doctor.jpg)  
 
-*Place screenshots of your project in a `screenshots` folder in the project directory.*  
+  
 
 ---

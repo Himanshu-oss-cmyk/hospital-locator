@@ -45,21 +45,39 @@ The **Hospital Locator** is a web application designed to assist users in locati
 ## Installation  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/hospital-locator.git
+   git clone https://github.com/Himanshu-oss-cmyk/hospital-locator.git
    ```
 2. Navigate to the project directory:  
    ```bash
    cd hospital-locator
+3. **Ensure you have XAMPP installed on your system.**  
+   - Download XAMPP from [Apache Friends](https://www.apachefriends.org/).  
+   - Install and start **Apache** and **MySQL** from the XAMPP Control Panel.  
+
+4. **Move the project folder to the XAMPP `htdocs` directory:**  
+   - Locate your XAMPP installation folder (e.g., `C:\xampp\htdocs`).  
+   - Copy the `hospital-locator` project folder into the `htdocs` directory.  
+
+5. **Import the database:**  
+   - Open **phpMyAdmin** in your browser by navigating to `http://localhost/phpmyadmin`.  
+   - Create a new database:  
+     ```sql
+     CREATE DATABASE hospital_locator;
+     ```  
+   - Import the provided SQL file into this database:  
+     - Click on the `hospital_locator` database.  
+     - Select the **Import** tab.  
+     - Choose the SQL file (e.g., `hospital_locator.sql`) from the project directory.  
+     - Click **Go** to import.  
+
+6. **Run the project:**  
+   - Open your browser and type:  
+     ```  
+     http://localhost/hospital-locator  
+     ```  
+   - The project homepage will load.  
    ```
-3. Install dependencies (if any):  
-   ```bash
-   npm install  # For Node.js dependencies
-   ```
-4. Start the local server:  
-   ```bash
-   php -S localhost:8000
-   ```
-5. Open your browser and visit: `http://localhost:8000`
+
   ---
 ## Screenshots  
 

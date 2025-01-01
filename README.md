@@ -40,13 +40,13 @@ The **Hospital Locator** is a web application designed to assist users in locati
 ![Homepage](screenshots/homepage.jpg)  
 
 ### Search for Hospitals  
-![Hospital Search](screenshots/hospital_search.png)  
+![Hospital Search](screenshots/maps.jpg)  
 
 ### Appointment Booking  
-![Appointment Booking](screenshots/appointment_booking.png)  
+![Appointment Booking](screenshots/appointment.jpg)  
 
-### Contact Us  
-![Contact Us Page](screenshots/contact_us.png)  
+### Search for Doctors 
+![Contact Us Page](screenshots/doctor.jpg)  
 
 *Place screenshots of your project in a `screenshots` folder in the project directory.*  
 

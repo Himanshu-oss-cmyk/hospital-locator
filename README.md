@@ -34,10 +34,7 @@ The **Hospital Locator** is a web application designed to assist users in locati
 ---
 
 ## Technologies Used  
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: PHP  
-- **Database**: MySQL  
-- **APIs**: Google Maps API for location-based services  
+ 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)  
 ![CSS](https://img.shields.io/badge/CSS-3-blue)  
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)  

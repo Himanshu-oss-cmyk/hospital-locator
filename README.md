@@ -60,8 +60,9 @@ The **Hospital Locator** is a web application designed to assist users in locati
   
 
 ---
+
 ## Project Goals  
 - Simplify the process of finding healthcare services.  
 - Provide users with a seamless way to book appointments.  
 - Leverage technology to improve healthcare accessibility.  
----s
+---

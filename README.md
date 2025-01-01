@@ -75,7 +75,7 @@ The **Hospital Locator** is a web application designed to assist users in locati
      http://localhost/hospital-locator  
      ```  
    - The project homepage will load.  
-   ```
+   
 
   ---
 ## Screenshots  
